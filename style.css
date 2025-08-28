@@ -2,6 +2,7 @@
   font-family: "KyivType Sans";
   src: url("fonts/KyivTypeSans-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
   font-display: swap; 
 }
 
@@ -9,6 +10,7 @@
   font-family: "KyivType Sans";
   src: url("fonts/KyivTypeSans-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
   font-display: swap; 
 }
 
@@ -16,6 +18,7 @@
   font-family: "KyivType Sans";
   src: url("fonts/KyivTypeSans-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -23,6 +26,7 @@
   font-family: "KyivType Sans";
   src: url("fonts/KyivTypeSans-Light.ttf") format("truetype");
   font-weight: 300;
+  font-style: normal;
   font-display: swap; 
 }
 
@@ -30,6 +34,15 @@
   font-family: "KyivType Sans";
   src: url("fonts/KyivTypeSans-Thin.ttf") format("truetype");
   font-weight: 100;
+  font-style: normal;
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: "GT Eesti Pro Text";
+  src: url("fonts/gteestiprotext_regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
   font-display: swap; 
 }
 
@@ -266,6 +279,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: baseline;
 }
 
 .header__menu-link a,
@@ -292,14 +306,16 @@ button:hover {
 }
 
 .main__title {
-  font-family: "KyivType Sans";
+  font-family: "GT Eesti Pro Text", sans-serif;
   font-size: 60px;
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 400;
   margin-bottom: 24px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
   line-height: 94%;
+  letter-spacing: -2.4px;
+  width: 60%;
+  font-feature-settings: "ss01";
 }
 
 .main__subtitle {
